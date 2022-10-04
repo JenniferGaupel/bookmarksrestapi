@@ -1,0 +1,23 @@
+DELETE a single bookmark
+---
+tags:
+  - Bookmarks
+
+parameters:
+  - in: header
+    name: Authorization
+    required: true
+  - in: query
+    description: The id of the bookmark to be deleted  
+    name: id
+    required: true    
+
+responses:
+  204:
+    description: Bookmark deleted
+  
+  404:
+    description: Bookmark not found for user id & bookmark id
+
+  401:
+    description: Fails to get items due to authentication error

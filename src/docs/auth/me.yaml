@@ -1,0 +1,16 @@
+GET logged in user info
+---
+tags:
+  - Authentication
+
+parameters:
+  - in: header
+    name: Authorization
+    required: true
+
+responses:
+  200:
+    description: Username and email
+
+  401:
+    description: Fails to get user due to authentication error

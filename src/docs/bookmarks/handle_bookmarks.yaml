@@ -1,0 +1,27 @@
+Handle bookmakrs
+---
+tags:
+  - Bookmarks
+parameters:
+  - name: body
+    description: The body should contain the new bookmarks data
+    in: body
+    required: true
+    schema:
+      type: object
+      required:
+        - "url"
+        - "body"
+      # properties:
+      #   email:
+      #     type: "url"
+      #     example: "crycetruly@gmail.com"
+      #   username:
+      #     type: "body"
+      #     example: "usernamex"
+responses:
+  201:
+    description: When a user successfully logs in
+
+  400:
+    description: Fails to Register due to bad request data
